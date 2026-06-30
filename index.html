@@ -2016,11 +2016,18 @@ function StripesScorer() {
       <div style={{background:`linear-gradient(135deg,${C.dark},${C.navy})`,
         padding:"11px 14px",display:"flex",alignItems:"center",justifyContent:"space-between",
         position:"relative",top:"auto",zIndex:10}}>
-        <div onClick={handleLogoTap} style={{userSelect:"none"}}>
-          <div style={{color:C.gold,fontWeight:900,fontSize:15,lineHeight:1}}>
-            🇺🇸 Serves & Stripes{adminMode && <span style={{fontSize:9,color:C.orange,marginLeft:5}}>✎ ADMIN</span>}
+        <div style={{display:"flex",alignItems:"center",gap:8}}>
+          <a href="https://thesandclubacademy.com/bomb-series/" style={{
+            background:"rgba(255,255,255,0.15)",color:"white",fontSize:13,
+            fontWeight:800,borderRadius:8,padding:"6px 12px",
+            textDecoration:"none",whiteSpace:"nowrap",flexShrink:0,
+          }}>⌂ Home</a>
+          <div onClick={handleLogoTap} style={{userSelect:"none"}}>
+            <div style={{color:C.gold,fontWeight:900,fontSize:15,lineHeight:1}}>
+              🇺🇸 Serves & Stripes{adminMode && <span style={{fontSize:9,color:C.orange,marginLeft:5}}>✎ ADMIN</span>}
+            </div>
+            <div style={{color:`${C.blue}cc`,fontSize:10,fontWeight:600}}>Best of Mesquite Beach</div>
           </div>
-          <div style={{color:`${C.blue}cc`,fontSize:10,fontWeight:600}}>Best of Mesquite Beach</div>
         </div>
         <div style={{textAlign:"right"}}>
           <div style={{color:C.white,fontWeight:900,fontSize:16,lineHeight:1}}>July 4</div>
